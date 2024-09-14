@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver"
+    android:paddingTop="20dp"
+    android:paddingStart="50dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Авторизация"
+            android:textColor="@color/light_green"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:paddingStart="50dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/checkBoxFirst"-->
+<!--                android:layout_width="93dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:text="Почта"-->
+<!--                android:textAlignment="center" />-->
+
+<!--            <RadioButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Телефон"-->
+<!--                android:textAlignment="center"-->
+<!--                app:layout_constraintLeft_toRightOf="@id/checkBoxFirst" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <EditText
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Почта/Номер телефона" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:hint="Пароль" />
+
+        <Button
+            android:textColor="@color/light_green"
+            android:backgroundTint="@color/light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_marginTop="25dp"
+            android:text="Войти"></Button>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
