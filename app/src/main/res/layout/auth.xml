@@ -4,70 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/silver"
-    android:paddingTop="20dp"
-    android:paddingStart="50dp"
+    android:background="@color/beige"
     tools:context=".MainActivity">
 
-
+    <TextView
+        android:id="@+id/tv_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Авторизация"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_red"
+        android:textSize="30sp" />
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="500dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Авторизация"
-            android:textColor="@color/light_green"
-            android:textAlignment="center"
-            android:textSize="30sp" />
-
-
-<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:paddingStart="50dp"-->
-<!--            android:orientation="horizontal">-->
-
-<!--            <RadioButton-->
-<!--                android:id="@+id/checkBoxFirst"-->
-<!--                android:layout_width="93dp"-->
-<!--                android:layout_height="49dp"-->
-<!--                android:text="Почта"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <RadioButton-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Телефон"-->
-<!--                android:textAlignment="center"-->
-<!--                app:layout_constraintLeft_toRightOf="@id/checkBoxFirst" />-->
-
-<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-        <EditText
-            android:layout_marginTop="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Почта/Номер телефона" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:inputType="textPassword"
-            android:hint="Пароль" />
-
+        app:layout_constraintTop_toBottomOf="@id/tv_reg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="64dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:id="@+id/buttonLl"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
         <Button
-            android:textColor="@color/light_green"
-            android:backgroundTint="@color/light_grey"
-            android:layout_width="wrap_content"
-            android:layout_height="100px"
-            android:layout_marginTop="25dp"
-            android:text="Войти"></Button>
+            android:id="@+id/checkBoxFirst"
+            android:backgroundTint="@color/purple_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="По номеру"
+            android:textSize="12sp"
+            android:textColor="@color/beige"
+            android:textAlignment="center" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_red"
+            android:textSize="12sp"
+            android:text="По почте"
+            android:layout_weight="1"
+            android:textColor="@color/beige"
+            android:textAlignment="center"
+            app:layout_constraintRight_toRightOf="@+id/buttonsConstraint"
+            />
     </LinearLayout>
 
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/buttonLl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="a"
+            android:hint="Номер/почта"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="a"
+            android:hint="Пароль"
+            android:inputType="textPassword" />
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/purple_red"
+            android:text="Авторизация"
+            android:textColor="@color/beige"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
