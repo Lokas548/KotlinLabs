@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/checkBoxFirst"
+            android:id="@+id/firstBtn"
             android:backgroundTint="@color/purple_red"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,6 +43,7 @@
             android:textColor="@color/beige"
             android:textAlignment="center" />
         <Button
+            android:id="@+id/secondBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/purple_red"
@@ -63,24 +64,28 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <EditText
+            android:id="@+id/firstEditText"
             android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:autofillHints="a"
-            android:hint="Номер/почта"/>
+            android:hint="Введите почту"/>
         <EditText
+            android:id="@+id/firstPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:autofillHints="a"
             android:hint="Пароль"
             android:inputType="textPassword" />
         <EditText
+            android:id="@+id/secondPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:autofillHints="a"
             android:inputType="textPassword"
             android:hint="Еще раз пароль" />
         <Button
+            android:id="@+id/registrationBtn"
             android:layout_marginTop="25dp"
             android:layout_width="250dp"
             android:layout_gravity="center"
