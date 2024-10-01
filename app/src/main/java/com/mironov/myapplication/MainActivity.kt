@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
 
         var isPhoneActive : Boolean = false
 
+        //При инициализации экрана активна кнопка "по почте"
+        emailBtn.setBackgroundColor(Color.parseColor("#FFBB86FC"))
+        emailBtn.setTextColor(Color.parseColor("#000000"))
+
         phoneNumberBtn.setOnClickListener {
             phoneNumberBtn.setBackgroundColor(Color.parseColor("#FFBB86FC"));
             phoneNumberBtn.setTextColor(Color.parseColor("#000000"))
