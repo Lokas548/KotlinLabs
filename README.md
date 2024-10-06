@@ -1,9 +1,27 @@
 # KotlinLabs
-LW1. Разметка XML
+<h2>LW1. Разметка XML</h2>
+<h3>DONE</h3>
 
 
-![Снимок экрана 2024-09-14 123647](https://github.com/user-attachments/assets/95e61c27-595a-40f7-9eb4-49072be50741)
+![2](https://github.com/user-attachments/assets/a97362f5-d028-411d-afb8-ff6efae1d832)
 
 
 
-![Снимок экрана 2024-09-14 123720](https://github.com/user-attachments/assets/d0961ee6-12aa-4398-be42-08e742d8c4db)
+
+
+![1](https://github.com/user-attachments/assets/dd411e63-906a-400c-b588-ea6d0c9fee87)
+
+
+
+
+
+
+<h3>Замечания с прошлой сдачи:</h3>
+Переверстать авторизацию ☑
+
+
+
+<h2>LW2. Обработать View на экране регистрации, созданном в предыдущей лабораторной</h2>
+<h3>DONE</h3>
+
+Решение лабораторной в файле MainActivity.kt
