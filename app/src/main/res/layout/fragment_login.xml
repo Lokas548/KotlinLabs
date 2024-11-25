@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/tv_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Авторизация"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_red"
+        android:textSize="30sp" />
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/tv_reg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:id="@+id/buttonLl"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/buttonLl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_marginTop="25dp"
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="a"
+            android:hint="Номер/почта"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="a"
+            android:hint="Пароль"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/authBtn"
+            android:layout_marginTop="25dp"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/purple_red"
+            android:text="Авторизация"
+            android:textColor="@color/beige"/>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Запомнить меня!"
+            android:textColor="@color/purple_red">
+        </CheckBox>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
