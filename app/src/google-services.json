@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "735644038675",
+    "project_id": "kotlin-auth-abc111",
+    "storage_bucket": "kotlin-auth-abc111.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735644038675:android:ad6d471b6aa3bbfce271e6",
+        "android_client_info": {
+          "package_name": "com.mironov.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRWqbhygieXljSKQOqLP5XUYYxfXP_pkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
